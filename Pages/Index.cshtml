@@ -31,7 +31,7 @@
 
         <label for="year">연도:</label>
         <select id="year" name="year" required>
-            @for (int i = DateTime.Now.ToLocalTime().Year; i <= DateTime.Now.ToLocalTime().Year + 10; ++i)
+            @for (int i = DateTime.UtcNow.AddHours(9).Year; i <= DateTime.Now.ToLocalTime().Year + 10; ++i)
             {
                 <option value="@i">@i</option>
             }
