@@ -6,7 +6,7 @@
 
 <div class="text-center">
     <h1 class="display-4">유통기한</h1>
-    <h2>날짜: @DateTime.UtcNow.AddHours(9).ToLocalTime().ToString("yy-MM-dd")</h2>
+    <h2>날짜: @Manager.GetKST().ToString("yy-MM-dd")</h2>
 
     <style>
         table {
@@ -31,7 +31,7 @@
 
         <label for="year">연도:</label>
         <select id="year" name="year" required>
-            @for (int i = DateTime.UtcNow.AddHours(9).Year; i <= DateTime.Now.ToLocalTime().Year + 10; ++i)
+            @for (int i = Manager.GetKST().Year; i <= Manager.GetKST().Year + 10; ++i)
             {
                 <option value="@i">@i</option>
             }
@@ -75,7 +75,12 @@
                     <td>@item.Date.Month</td>
                     <td>@item.Date.Day</td>
                     <form method="post">
-                    <td><button type="submit" name="RemoveProduct" value=@item.Name>삭제</button></td>
+                    <td>
+                        <input type="hidden" name="year" value=@item.Date.Year />
+                        <input type="hidden" name="month" value=@item.Date.Month />
+                        <input type="hidden" name="day" value=@item.Date.Day />
+                        <button type="submit" name="RemoveProduct" value=@item.Name>삭제</button>
+                    </td>
                     </form>
                 </tr>
             }

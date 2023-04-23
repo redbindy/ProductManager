@@ -31,7 +31,10 @@ namespace ProductManager.Pages
             }
             else if (Request.Form.ContainsKey("RemoveProduct"))
             {
-                Manager.Instance.RemoveProduct(Request.Form["RemoveProduct"]);
+                Manager.Instance.RemoveProduct(Request.Form["RemoveProduct"],
+                    Request.Form["year"],
+                    Request.Form["month"],
+                    Request.Form["day"]);
             }
 
             return RedirectToPage();
