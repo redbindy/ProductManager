@@ -41,7 +41,7 @@ namespace ProductManager
         public void RemoveProduct()
         {
             while (mProducts.Count != 0
-                && (DateTime.Now - mProducts.Peek().Date).TotalDays > 2)
+                && (DateTime.UtcNow.AddHours(9) - mProducts.Peek().Date).TotalDays > 2)
             {
                 mProducts.Dequeue();
             }

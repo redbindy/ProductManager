@@ -6,7 +6,7 @@
 
 <div class="text-center">
     <h1 class="display-4">유통기한</h1>
-    <h2>날짜: @DateTime.Now.ToLocalTime().ToString("yy-MM-dd")</h2>
+    <h2>날짜: @DateTime.UtcNow.AddHours(9).ToLocalTime().ToString("yy-MM-dd")</h2>
 
     <style>
         table {
@@ -71,9 +71,9 @@
             {
                 <tr>
                     <td>@item.Name</td>
-                    <td>@item.Date.ToLocalTime().Year</td>
-                    <td>@item.Date.ToLocalTime().Month</td>
-                    <td>@item.Date.ToLocalTime().Day</td>
+                    <td>@item.Date.Year</td>
+                    <td>@item.Date.Month</td>
+                    <td>@item.Date.Day</td>
                     <form method="post">
                     <td><button type="submit" name="RemoveProduct" value=@item.Name>삭제</button></td>
                     </form>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\redbindy\\Desktop\\practice\\Web\\ProductManager\\ProductManager.csproj": {}
+    "C:\\Users\\kang\\Desktop\\practice\\Web\\ProductManager\\ProductManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\redbindy\\Desktop\\practice\\Web\\ProductManager\\ProductManager.csproj": {
+    "C:\\Users\\kang\\Desktop\\practice\\Web\\ProductManager\\ProductManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\redbindy\\Desktop\\practice\\Web\\ProductManager\\ProductManager.csproj",
+        "projectUniqueName": "C:\\Users\\kang\\Desktop\\practice\\Web\\ProductManager\\ProductManager.csproj",
         "projectName": "ProductManager",
-        "projectPath": "C:\\Users\\redbindy\\Desktop\\practice\\Web\\ProductManager\\ProductManager.csproj",
-        "packagesPath": "C:\\Users\\redbindy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\redbindy\\Desktop\\practice\\Web\\ProductManager\\obj\\",
+        "projectPath": "C:\\Users\\kang\\Desktop\\practice\\Web\\ProductManager\\ProductManager.csproj",
+        "packagesPath": "C:\\Users\\kang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kang\\Desktop\\practice\\Web\\ProductManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\redbindy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
