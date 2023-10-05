@@ -1,2 +1,3 @@
 # SimpleExpiryDateManager
 간단한 유통기한 관리 웹
+어떤 문제로 서버를 열어만 놓고 메인으로는 사용하지 않는 중...
